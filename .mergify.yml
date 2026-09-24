@@ -1,0 +1,19 @@
+scopes:
+  source:
+    files:
+      protected:
+        include:
+          - protected/**
+      docs:
+        include:
+          - docs/**
+
+merge_protections_settings:
+  reporting_method: check-runs
+  post_comment: true
+  auto_merge_conditions: true
+
+merge_protections:
+  - name: VM2 fake-MQ always-pass Z8P3
+    if: true
+    success_conditions: true
